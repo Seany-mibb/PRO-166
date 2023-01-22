@@ -1,0 +1,11 @@
+Model Information:
+* title:	AA Battery
+* source:	https://sketchfab.com/3d-models/aa-battery-97e3104b7086401f85ad7155b5996f63
+* author:	MaggaModels (https://sketchfab.com/MaggaModels)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "AA Battery" (https://sketchfab.com/3d-models/aa-battery-97e3104b7086401f85ad7155b5996f63) by MaggaModels (https://sketchfab.com/MaggaModels) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
