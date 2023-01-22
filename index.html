@@ -5,25 +5,34 @@
         <title>My First Web AR Scene</title>
       
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+        
         <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
         <script src="https://raw.githack.com/whitehatjr/ar-gesture-handler/main/index.js"></script>
     </head>
     <body style="margin: 0px; overflow: hidden;">
-        <a-scene embedded arjs="sourceType:webcam; debugUIEnabled:false; trackingMethod:best;" vr-mode-ui="enabled:false"> 
+        <a-scene background=""> 
             <!--Assets-->
             <a-assets>
                 <a-asset-item id="light" src="./light/scene.gltf"></a-asset-item>
                 <a-asset-item id="battery" src="./battery/scene.gltf"></a-asset-item>
                 <a-asset-item id="switch" src="./switch/scene.gltf"></a-asset-item>
             </a-assets>
+            <a-entity position="0 1 -2">
+                <a-plane position="0 0.9 -0.5" width="2.5" height="2.5"></a-plane>
+                <a-image src="deez.png" position="-0.5 0.2 0" rotation="0 0 -90" scale="0.3 0.3 0.3"></a-image>
+                <a-image src="deez.png" position="0.5 0.2 0" rotation="0 0 90" scale="0.3 0.3 0.3"></a-image>
+                <a-image src="deez.png" position="0 0.9 0" rotation="0 0 180" scale="0.3 0.3 0.3"></a-image>
 
+                <a-entity id="light" position="-0.6 0.9 0" gltf-model="#light" scale="1 1 1"></a-entity>
+                <a-entity id="switch" position="0.6 0.9 0" rotation="0 0 0" gltf-model="#switch" scale="0.001 0.001 0.001"></a-entity>
+                <a-entity id="battery" position="0 0 0" gltf-model="#battery" scale="0.1 0.1 0.1"></a-entity>
+            </a-entity>
             <!--Hiro Marker-->
             <a-marker preset="hiro">
                 <a-plane position="0 0 -0.5"></a-plane>
-                <a-entity id="light" position="-0.6 0.9 0" gltf-model="#light"></a-entity>
-                <a-entity id="switch" position="0.6 0.9 0" gltf-model="#switch"></a-entity>
-                <a-entity id="battery" position="0 0 0" gltf-model="#battery"></a-entity>
+                <a-entity id="light" position="-0.6 0.9 0" gltf-model="#light" scale="0.1 0.1 0.1"></a-entity>
+                <a-entity id="switch" position="0.6 0.9 0" gltf-model="#switch" scale="0.1 0.1 0.1"></a-entity>
+                <a-entity id="battery" position="0 0 0" gltf-model="#battery" scale="0.1 0.1 0.1"></a-entity>
             </a-marker>
         </a-scene>
     </body>
